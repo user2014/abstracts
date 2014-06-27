@@ -1,4 +1,3 @@
-
 talks <- list.files("../talks", full.names=T)
 posters <- list.files("../posters", full.names=T)
 writeLines(c(
