@@ -1,0 +1,24 @@
+\documentclass[11pt,letterpaper,twoside,auto]{article}
+\setlength{\oddsidemargin}{-10mm} 
+\setlength{\evensidemargin}{-10mm} 
+\setlength{\topmargin}{-15mm}    
+\setlength{\headheight}{1cm}
+\setlength{\headsep}{1cm}
+\setlength{\footskip}{1cm} 
+\setlength{\textwidth}{16cm} 
+\setlength{\textheight}{21cm} 
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\fancyfoot{} % clear all footer fields
+\fancyhead{} % clear all header fields
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[LO,RE]{\slshape useR! 2014, Los Angeles, USA}
+\begin{document}
+\pagestyle{empty}
+\includepdfset{pages=-,pagecommand={},turn=false,noautoscale=true}
+\includepdf[pagecommand={\thispagestyle{empty}}]{cover.pdf}
+\cleardoublepage
+\pagestyle{fancy}
+\setcounter{page}{1}
+\includepdf{_Abstracts1.pdf}
+\end{document}
